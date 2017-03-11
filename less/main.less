@@ -1,9 +1,12 @@
 *{
 	outline: none;
 }
+// cтили для header
+
 header{
 
-	// float: left;
+	width: 98.8%;
+	margin-bottom: 10px;
 
 	.header{
 		height: 75px;
@@ -41,5 +44,90 @@ header{
 
 	#admin:hover{
 		text-decoration: none;
+	}
+}
+
+// стили для footer
+
+footer{
+
+	width: 98.8%;
+	margin-top: 10px;
+	position: fixed;
+    left: 0; bottom: 0;
+
+	.footer{
+		height: 75px;
+		width: 100%;
+		border-top: 2px solid silver;
+	}
+}
+
+center{
+	.menu{
+		hr{
+			width: 500px;
+			max-width: 100%;
+			margin-top: 7px;
+			margin-bottom: 12px;
+			display: block;
+			border: 0;
+			height: 2px;
+			border-top: 2px solid #54A05F;
+		}
+	}
+
+	.menu-forums{
+		
+		width: 500px;
+		height: auto;
+
+			.nav{				
+
+				.nav-menu{
+					
+					display: block;
+					list-style: none;
+
+					.nav-menu-li{
+						display: inline-block;
+						margin-right: 15px;						
+					}
+
+					.nav-menu-li-in{
+						padding: 10px 30px;
+					}
+
+					li:hover .nav-menu-li-in{
+						
+						background-color: #FAF87E;
+						border-radius: 5px;
+
+					}
+
+					.submenu{
+						padding: 10px;
+						list-style: none;
+						display: block;
+						margin-top: 5px;
+						border-radius: 0 0 5px 5px;
+						opacity: 0;
+						background: #FAF87E;
+						transition: 1.5s ease;
+  						transform: translateY(-200%);
+
+  						li{
+  							padding-top: 5px;
+  						}
+
+  						a{text-decoration: none;}
+					}
+
+					.nav-menu-li:hover ul{					
+						transform: translateY(0);
+  						opacity: 1;
+					}
+				}
+			}
 	}
 }
